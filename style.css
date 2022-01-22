@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.calc {
+    width: 80%;
+    height: 80%;
+    max-width: 500px;
+    max-height: 500px;
+    margin: 20px auto 0 auto;
+    padding: 5px;
+    display: grid;
+    border: 3px solid black;
+    border-radius: 15px 2px 15px 2px;
+    background-color: #999;
+    gap: 5px;
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6 1fr);
+    
+}
+
+input {
+    width: 100%;
+    font-size: 30px;
+    border: 2px solid black;
+    border-radius: 15px 2px 15px 2px;
+    cursor: pointer;
+}
+
+.screen {
+    width: 100%;
+    text-align: right;
+    padding-right: 5px;
+    background-color: rgb(0, 0, 0);
+    grid-row: 1 / span 1;
+    grid-column: 1 / 5;
+    color: white;
+}
+
+#nine {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+}
+#eight {
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+}
+#seven {
+    grid-row: 2 / span 1;
+    grid-column: 3 / span 1;
+}
+#six {
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 1;
+}
+#five {
+    grid-row: 3 / span 1;
+    grid-column: 2 / span 1;
+}
+#four {
+    grid-row: 3 / span 1;
+    grid-column: 3 / span 1;
+}
+#three {
+    grid-row: 4 / span 1;
+    grid-column: 1 / span 1;
+}
+#two {
+    grid-row: 4 / span 1;
+    grid-column: 2 / span 1;
+}
+#one {
+    grid-row: 4 / span 1;
+    grid-column: 3 / span 1;
+}
+#zero {
+    grid-row: 5 / span 1;
+    grid-column: 2 / span 1;
+}
+
+#minus {
+    grid-row: 5 / span 1;
+    grid-column: 4 / span 1;
+}
+
+#decimal {
+    grid-row: 5 / span 1;
+    grid-column: 3 / span 1;
+}
+
+#equals {
+    grid-row: 6 / span 1;
+    grid-column: 3 / span 2;
+    background-color: rgb(61, 191, 243);
+}
+
+#clear_all {
+    grid-column: 1 / span 2;
+    grid-row: 6 / span 1;
+    background-color: rgba(250, 29, 29, 0.664);
+}
+
+#clear {
+    grid-row: 5 / span 1;
+    grid-column: 1 / span 1;
+    background-color: rgba(250, 29, 29, 0.664);
+}
+
