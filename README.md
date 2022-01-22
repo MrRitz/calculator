@@ -1,3 +1,3 @@
 # calculator
-Calculator written in JavaScript\n
+Calculator written in JavaScript.
 Visit mritz757.com to see this in action!
